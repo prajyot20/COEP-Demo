@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nostra13.universalimageloader.sample.activity.DrawerActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:padding="50dp"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="@android:color/holo_orange_dark"
+        app:cardUseCompatPadding="true"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/demo"
+            android:text="Welcome to Class!! In this app you will be able to Buffer lectures, read books and listen to our audio lectures. Have Good surfing!!" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/holo_blue_dark"
+        card_view:cardElevation="15dp"
+        android:padding="80dp"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@android:color/holo_blue_bright"
+        app:cardElevation="15dp">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="center">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:text="USERNAME" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/username" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:text="PASSWORD" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/password" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:text="LASTNAME" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/lastname" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:text="PHONE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/phone" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:text="EMAIL" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/email" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:text="CLASS" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/class1" />
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
