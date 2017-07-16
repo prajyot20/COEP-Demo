@@ -387,6 +387,20 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
             }
 
         }
+		else if (id == R.id.nav_aboutUS) {
+            tag = WebViewFragment.class.getSimpleName();
+            fr = getSupportFragmentManager().findFragmentByTag(tag);
+            if(ConstantValues.offlineDemoFlag){
+                b.putString("url","\n" +"file:///android_asset/placement.html");
+            }else
+            b.putString("url", "http://www.coep.org.in/placementcell");
+            if (fr == null) {
+                fr = new WebViewFragment();
+                fr.setArguments(getIntent().getExtras());
+                fr.setArguments(b);
+            }
+//            startActivity(new Intent(DrawerActivity.this, WebViewActivityUrlLoad.class).putExtra("url","http://www.coep.org.in/placementcell"));
+        }
        /* //FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.fragmentid,fr).addToBackStack("test").commit();
         getSupportFragmentManager().executePendingTransactions();

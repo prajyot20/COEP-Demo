@@ -97,6 +97,11 @@
             </group>
         </menu>
     </item>
+   <item
+        android:id="@+id/nav_aboutUS"
+        android:icon="@drawable/ic_magnifying_glass"
+        android:title="About US and MuPdf Library" />
+
     <item
         android:id="@+id/logout"
         android:icon="@drawable/ic_menu_share"
